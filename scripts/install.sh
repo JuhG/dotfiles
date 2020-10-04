@@ -46,7 +46,7 @@ touch $HOME/.local/share/appimagekit/no_desktopintegration
 # node & npm
 sudo apt install nodejs -y
 sudo apt install npm -y
-sudo npm i -g rebase-editor
+npm i -g rebase-editor
 
 # maven
 sudo apt install maven -y
