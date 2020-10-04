@@ -1,0 +1,10 @@
+[user]
+	email = gabor.juhasz@accretivetg.com
+	name = Gabor Juhasz
+[credential]
+	helper = store
+[core]
+	filemode = false
+	editor = vim
+[sequence]
+	editor = rebase-editor
