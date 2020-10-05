@@ -30,4 +30,3 @@ linkDotfile .zshrc
 linkDotfile .profile
 linkDotfile .gitconfig
 linkDotfile .hyper.js
-linkDotfile .Xmodmap

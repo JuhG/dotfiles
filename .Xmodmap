@@ -1,6 +1,0 @@
-keycode 49 = 0 asciitilde 0 asciitilde
-keycode 94 = grave bar iacute
-remove mod4 = Super_L
-add control = Super_L
-keycode 52 = y Y y Y
-keycode 29 = z Z z Z

@@ -109,5 +109,3 @@ unsetopt PROMPT_SP
 
 # aliases
 alias c="code ."
-
-xmodmap ~/.Xmodmap
