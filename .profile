@@ -32,8 +32,6 @@ fi
 # export XMODIFIERS=@im=ibus
 # export QT_IM_MODULE=ibus
 
-# xmodmap ~/.Xmodmap
-
 # export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
@@ -42,13 +40,3 @@ fi
 
 # start BT
 # blueman-applet
-
-# zsh autojump
-# [[ -s /home/juhg/.autojump/etc/profile.d/autojump.sh ]] && source /home/juhg/.autojump/etc/profile.d/autojump.sh
-# autoload -U compinit && compinit -u
-
-# aliases
-alias c="code ."
-
-# remove % before promt
-unsetopt PROMPT_SP

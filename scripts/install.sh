@@ -36,12 +36,10 @@ sudo apt install tableplus -y
 
 # dockstation
 sudo apt install docker.io docker-compose -y
+sudo groupadd docker
 sudo usermod -aG docker $USER
-wget https://github.com/DockStation/dockstation/releases/download/v1.5.1/dockstation-1.5.1-x86_64.AppImage
-chmod +x ./*.AppImage
-mkdir -p $HOME/.local/share/appimagekit
-touch $HOME/.local/share/appimagekit/no_desktopintegration
-./dockstation-1.5.1-x86_64.AppImage
+wget https://github.com/DockStation/dockstation/releases/download/v1.5.1/dockstation_1.5.1_amd64.deb
+sudo apt install ./dockstation_1.5.1_amd64.deb -y
 
 # node & npm
 sudo apt install nodejs -y
@@ -59,7 +57,6 @@ sudo apt install gnome-sushi -y
 
 # VPN
 sudo apt install openconnect network-manager-openconnect-gnome -y
-nmcli con mod ICF vpn.secrets 'form:main:username=gabor.juhasz','save_passwords=yes'
 
 # backup
 sudo apt purge duplicity

@@ -99,3 +99,15 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 source $HOME/.profile
+
+# zsh autojump
+[[ -s /home/juhg/.autojump/etc/profile.d/autojump.sh ]] && source /home/juhg/.autojump/etc/profile.d/autojump.sh
+autoload -U compinit && compinit -u
+
+# remove % before promt
+unsetopt PROMPT_SP
+
+# aliases
+alias c="code ."
+
+xmodmap ~/.Xmodmap
