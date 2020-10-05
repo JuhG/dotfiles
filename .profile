@@ -26,15 +26,13 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-export PATH=~/.npm-global/bin:$PATH
+# export PATH=~/.npm-global/bin:$PATH
 
 # export GTK_IM_MODULE=ibus
 # export XMODIFIERS=@im=ibus
 # export QT_IM_MODULE=ibus
 
 # xmodmap ~/.Xmodmap
-
-. /usr/share/autojump/autojump.sh
 
 # export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -45,5 +43,12 @@ export PATH=~/.npm-global/bin:$PATH
 # start BT
 # blueman-applet
 
+# zsh autojump
+# [[ -s /home/juhg/.autojump/etc/profile.d/autojump.sh ]] && source /home/juhg/.autojump/etc/profile.d/autojump.sh
+# autoload -U compinit && compinit -u
+
 # aliases
 alias c="code ."
+
+# remove % before promt
+unsetopt PROMPT_SP
