@@ -17,6 +17,8 @@ sudo snap install --classic gitkraken
 sudo snap install --classic skype
 # VS Code
 sudo snap install --classic code
+# postman
+sudo snap install postman
 
 # Hyper
 wget https://github.com/vercel/hyper/releases/download/3.0.2/hyper_3.0.2_amd64.deb
@@ -45,6 +47,7 @@ sudo apt install ./dockstation_1.5.1_amd64.deb -y
 sudo apt install nodejs -y
 sudo apt install npm -y
 npm i -g rebase-editor
+npm i -g npm-check-updates
 npx gatsby telemetry --disable
 
 # maven
@@ -60,8 +63,7 @@ sudo apt install openconnect network-manager-openconnect-gnome -y
 
 # backup
 sudo apt purge duplicity
-sudo snap install duplicity --classic --edge
-sudo snap install deja-dup --classic --edge
+sudo apt purge deja-dup
 
 # finish
 sudo apt autoremove -y
