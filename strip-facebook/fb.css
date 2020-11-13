@@ -1,0 +1,15 @@
+.__fb-dark-mode:root {
+  --header-height: 0;
+}
+
+[role='banner'] {
+  display: none;
+}
+
+iframe {
+  height: 100vh;
+}
+
+[data-pagelet='root'] > div > div > div > div {
+  top: 0;
+}

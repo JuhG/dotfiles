@@ -1,0 +1,13 @@
+{
+  "name": "Strip FB",
+  "version": "1.0",
+  "description": "I don't want any notifications!",
+  "permissions": ["tabs", "*://*.facebook.com/messages/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.facebook.com/messages/*"],
+      "css": ["fb.css"]
+    }
+  ],
+  "manifest_version": 2
+}
