@@ -115,3 +115,4 @@ unsetopt PROMPT_SP
 alias c="code ."
 
 alias zsh_corrupt="mv ~/.zsh_history ~/.zsh_history_bad && strings ~/.zsh_history_bad > ~/.zsh_history && fc -R ~/.zsh_history && rm ~/.zsh_history_bad"
+alias sail='bash vendor/bin/sail'

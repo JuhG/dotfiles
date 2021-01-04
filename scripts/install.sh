@@ -53,6 +53,13 @@ npx gatsby telemetry --disable
 # maven
 sudo apt install maven -y
 
+# php
+# https://docs.brew.sh/Homebrew-on-Linux
+brew install php
+brew install mysql
+brew install composer
+# brew install valet
+
 # ubuntu
 sudo add-apt-repository universe -y
 sudo apt install gnome-tweak-tool -y
