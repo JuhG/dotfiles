@@ -27,6 +27,5 @@ function linkDotfile {
 }
 
 linkDotfile .zshrc
-linkDotfile .profile
 linkDotfile .gitconfig
 linkDotfile .hyper.js

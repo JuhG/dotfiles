@@ -102,8 +102,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source $HOME/.profile
-
 # zsh autojump
 [[ -s /home/juhg/.autojump/etc/profile.d/autojump.sh ]] && source /home/juhg/.autojump/etc/profile.d/autojump.sh
 autoload -U compinit && compinit -u
@@ -116,3 +114,6 @@ alias c="code ."
 
 alias zsh_corrupt="mv ~/.zsh_history ~/.zsh_history_bad && strings ~/.zsh_history_bad > ~/.zsh_history && fc -R ~/.zsh_history && rm ~/.zsh_history_bad"
 alias sail='bash vendor/bin/sail'
+
+# homebrew
+eval $(~/.linuxbrew/bin/brew shellenv)
