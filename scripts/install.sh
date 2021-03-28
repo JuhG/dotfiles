@@ -8,22 +8,10 @@ cd ~/Downloads
 
 
 # # # # # #
-# Homebrew
-# # # # # #
-git clone https://github.com/Homebrew/brew ~/.linuxbrew/Homebrew
-mkdir ~/.linuxbrew/bin
-ln -s ~/.linuxbrew/Homebrew/bin/brew ~/.linuxbrew/bin
-eval $(~/.linuxbrew/bin/brew shellenv)
-brew update
-
-
-
-# # # # # #
 # Terminal
 # # # # # #
 
 # Zsh & oh-my-zsh
-sudo apt install -y zsh
 wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 sh install.sh
 cp ~/dotfiles/.oh-my-zsh/themes/robbyrussell.zsh-theme ~/.oh-my-zsh/themes/
@@ -86,11 +74,10 @@ sudo npm i -g vercel
 sudo apt install -y maven
 
 # PHP
-brew install php
-brew install mysql
-brew install composer
+sudo apt install -y php-cli unzip
+curl -sS https://getcomposer.org/installer -o composer-setup.php
+sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 composer global require laravel/installer
-composer global require cpriego/valet-linux
 
 
 
@@ -135,7 +122,6 @@ sudo apt install -y ./dockstation_1.5.1_amd64.deb
 sudo apt install -y p7zip-full
 wget https://raw.githubusercontent.com/puneetsl/lotion/master/setup.sh
 bash setup.sh native
-rm setup.sh
 
 
 
