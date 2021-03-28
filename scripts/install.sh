@@ -77,7 +77,8 @@ sudo apt install -y php8.0 php8.0-fpm
 sudo apt install -y openssl php-common php-curl php-json php-mbstring php-mysql php-xml php-zip
 sudo apt install -y php8.0-common php8.0-bcmath php8.0-mbstring php8.0-gd php8.0-intl php8.0-xsl
 curl -sS https://getcomposer.org/installer -o composer-setup.php
-php composer-setup.php
+php composer-setup.php --filename=composer
+sudo mv composer /usr/local/bin/
 composer global require laravel/installer
 
 
@@ -153,3 +154,8 @@ mkdir $HOME/work
 # Languages
 sudo cp $HOME/dotfiles/usr_share_X11_xkb_symbols/hu /usr/share/X11/xkb/symbols/
 sudo cp $HOME/dotfiles/usr_share_X11_xkb_symbols/us /usr/share/X11/xkb/symbols/
+
+# Bluetooth
+sudo mkdir -p /lib/firmware/brcm/
+sudo cp $HOME/dotfiles/bluetooth/BCM20702A1-0b05-17cb.hcd /usr/lib/firmware/brcm/BCM20702A1-0b05-17cb.hcd
+sudo apt install -y blueman pulseaudio-module-bluetooth
