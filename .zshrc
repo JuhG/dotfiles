@@ -6,7 +6,6 @@ export ZSH="/home/juhg/.oh-my-zsh"
 
 # PATH
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
-export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -114,6 +113,3 @@ alias c="code ."
 
 alias zsh_corrupt="mv ~/.zsh_history ~/.zsh_history_bad && strings ~/.zsh_history_bad > ~/.zsh_history && fc -R ~/.zsh_history && rm ~/.zsh_history_bad"
 alias sail='bash vendor/bin/sail'
-
-# homebrew
-eval $(~/.linuxbrew/bin/brew shellenv)

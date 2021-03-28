@@ -3,7 +3,7 @@
 sudo apt update -y
 sudo apt upgrade -y
 sudo apt install -y build-essential curl file
-cd ~/Downloads
+cd $HOME/Downloads
 
 
 
@@ -12,16 +12,14 @@ cd ~/Downloads
 # # # # # #
 
 # Zsh & oh-my-zsh
-wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
-sh install.sh
-cp ~/dotfiles/.oh-my-zsh/themes/robbyrussell.zsh-theme ~/.oh-my-zsh/themes/
+cp $HOME/dotfiles/.oh-my-zsh/themes/robbyrussell.zsh-theme $HOME/.oh-my-zsh/themes/
 # Jump
 sudo apt install -y python
 git clone git://github.com/wting/autojump.git
 python ./autojump/install.py
 # Plugins
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
 # Apps
 sudo apt install -y vim
@@ -32,7 +30,7 @@ wget https://github.com/vercel/hyper/releases/download/3.0.2/hyper_3.0.2_amd64.d
 sudo apt install -y ./hyper_3.0.2_amd64.deb
 
 # Settings
-bash ~/dotfiles/scripts/symlink.sh
+bash $HOME/dotfiles/scripts/symlink.sh
 
 
 
@@ -74,9 +72,12 @@ sudo npm i -g vercel
 sudo apt install -y maven
 
 # PHP
-sudo apt install -y php-cli unzip
+sudo add-apt-repository -y ppa:ondrej/php
+sudo apt install -y php8.0 php8.0-fpm
+sudo apt install -y openssl php-common php-curl php-json php-mbstring php-mysql php-xml php-zip
+sudo apt install -y php8.0-common php8.0-bcmath php8.0-mbstring php8.0-gd php8.0-intl php8.0-xsl
 curl -sS https://getcomposer.org/installer -o composer-setup.php
-sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+php composer-setup.php
 composer global require laravel/installer
 
 
@@ -146,10 +147,9 @@ sudo apt update -y
 sudo apt upgrade -y
 
 # Folders
-cd ~
-mkdir -p code/old
-mkdir work
+mkdir -p $HOME/code/old
+mkdir $HOME/work
 
 # Languages
-sudo cp ~/dotfiles/usr_share_X11_xkb_symbols/hu /usr/share/X11/xkb/symbols/
-sudo cp ~/dotfiles/usr_share_X11_xkb_symbols/us /usr/share/X11/xkb/symbols/
+sudo cp $HOME/dotfiles/usr_share_X11_xkb_symbols/hu /usr/share/X11/xkb/symbols/
+sudo cp $HOME/dotfiles/usr_share_X11_xkb_symbols/us /usr/share/X11/xkb/symbols/
