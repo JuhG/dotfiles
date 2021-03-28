@@ -26,7 +26,7 @@ brew update
 sudo apt install -y zsh
 wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 sh install.sh
-cp .oh-my-zsh/themes/robbyrussell.zsh-theme ~/.oh-my-zsh/themes/robbyrussell.zsh-theme
+cp ~/dotfiles/.oh-my-zsh/themes/robbyrussell.zsh-theme ~/.oh-my-zsh/themes/
 # Jump
 sudo apt install -y python
 git clone git://github.com/wting/autojump.git
@@ -163,3 +163,7 @@ sudo apt upgrade -y
 cd ~
 mkdir -p code/old
 mkdir work
+
+# Languages
+sudo cp ~/dotfiles/usr_share_X11_xkb_symbols/hu /usr/share/X11/xkb/symbols/
+sudo cp ~/dotfiles/usr_share_X11_xkb_symbols/us /usr/share/X11/xkb/symbols/
