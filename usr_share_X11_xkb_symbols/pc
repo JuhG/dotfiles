@@ -73,7 +73,7 @@ xkb_symbols "editing" {
 	type= "PC_CONTROL_LEVEL2",
 	symbols[Group1]= [ Pause, Break ]
     };
-    key  <INS> {	[  Insert		]	};
+    key  <INS> {	[  grave		]	};
     key <HOME> {	[  Home			]	};
     key <PGUP> {	[  Prior		]	};
     key <DELE> {	[  Delete		]	};

@@ -196,6 +196,8 @@ xkb_symbols "102_qwertz_comma_dead" {
     include "hu(def_dead)"
     include "hu(def_common)"
     include "level3(ralt_switch)"
+    
+    key  <INS> { [ iacute ] };
 };
 
 // 102_qwertz_comma_nodead
