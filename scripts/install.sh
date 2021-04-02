@@ -159,3 +159,6 @@ sudo cp $HOME/dotfiles/usr_share_X11_xkb_symbols/us /usr/share/X11/xkb/symbols/
 sudo mkdir -p /lib/firmware/brcm/
 sudo cp $HOME/dotfiles/bluetooth/BCM20702A1-0b05-17cb.hcd /usr/lib/firmware/brcm/BCM20702A1-0b05-17cb.hcd
 sudo apt install -y blueman pulseaudio-module-bluetooth
+
+# Audio
+sudo apt install -y pavucontrol
