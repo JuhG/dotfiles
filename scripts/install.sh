@@ -162,3 +162,6 @@ sudo apt install -y blueman pulseaudio-module-bluetooth
 
 # Audio
 sudo apt install -y pavucontrol
+
+# Battery notification
+sudo apt install dconf-editor
