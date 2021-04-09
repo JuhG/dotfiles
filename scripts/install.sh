@@ -107,6 +107,9 @@ sudo apt install -y fonts-firacode
 # Postman
 sudo snap install postman
 
+# Todoist
+sudo snap install todoist
+
 # Tableplus
 wget -O - -q http://deb.tableplus.com/apt.tableplus.com.gpg.key | sudo apt-key add - 
 sudo add-apt-repository "deb [arch=amd64] https://deb.tableplus.com/debian tableplus main"
