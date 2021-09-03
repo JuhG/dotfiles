@@ -14,7 +14,7 @@ module.exports = {
 
     // font family with optional fallbacks
     fontFamily:
-      'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+      'Fira Code, Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: "normal",
@@ -99,7 +99,7 @@ module.exports = {
     //
     // PowerShell on Windows
     // - Example: `C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe`
-    shell: "/usr/bin/zsh",
+    shell: "/bin/zsh",
 
     // for setting shell arguments (i.e. for using interactive shellArgs: `['-i']`)
     // by default `['--login']` will be used
@@ -127,7 +127,7 @@ module.exports = {
     // for advanced config flags please refer to https://hyper.is/#cfg
 
     summon: {
-      hotkey: "ctrl+e",
+      hotkey: "cmd+e",
     },
 
     hypercwd: {},

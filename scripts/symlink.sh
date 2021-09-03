@@ -29,3 +29,6 @@ function linkDotfile {
 linkDotfile .zshrc
 linkDotfile .gitconfig
 linkDotfile .hyper.js
+
+mv ~/.config/karabiner ~/dotfiles
+ln -s ~/dotfiles/karabiner ~/.config

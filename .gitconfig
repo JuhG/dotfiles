@@ -8,3 +8,5 @@
 	editor = vim
 [sequence]
 	editor = rebase-editor
+[pull]
+	rebase = false
