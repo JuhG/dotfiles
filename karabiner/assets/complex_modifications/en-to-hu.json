@@ -145,6 +145,17 @@
         {
           "type": "basic",
           "from": {
+            "key_code": "grave_accent_and_tilde",
+            "modifiers": { "mandatory": ["control", "option", "command"] }
+          },
+          "to": [
+            { "key_code": "e", "modifiers": ["option"] },
+            { "key_code": "i" }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
             "key_code": "backslash",
             "modifiers": { "mandatory": ["control", "option", "command"] }
           },
@@ -246,6 +257,19 @@
           "type": "basic",
           "from": {
             "key_code": "insert",
+            "modifiers": {
+              "mandatory": ["shift", "control", "option", "command"]
+            }
+          },
+          "to": [
+            { "key_code": "e", "modifiers": ["option"] },
+            { "key_code": "i", "modifiers": ["shift"] }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "grave_accent_and_tilde",
             "modifiers": {
               "mandatory": ["shift", "control", "option", "command"]
             }
